@@ -2,8 +2,8 @@
  * Created by desingh on 11/23/14.
  */
 var todoData = [
-    {title: 'Buy detergent power'},
-    {title: 'Wash your cloths, Almost two weeks gone'},
+    {title: 'Buy detergent power.', description: 'Ayyo mudiyala'},
+    {title: 'Wash your cloths, Almost two weeks gone.'},
     {title: 'Go outside and see the sky, ground, tree! You noob prisoner.'}
 ];
 

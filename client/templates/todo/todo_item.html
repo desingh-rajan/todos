@@ -2,8 +2,11 @@
   <div class="todo-item">
     <div class="todo-title">
       <h3>
-        <a href="">{{title}}</a><span>{{domain}}</span>
+        {{title}}
       </h3>
+        {{#if description}}
+        <span>{{description}}</span>
+        {{/if}}
     </div>
   </div>
 </template>
