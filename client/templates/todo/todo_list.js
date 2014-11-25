@@ -1,6 +1,3 @@
-/**
- * Created by desingh on 11/23/14.
- */
 var todoData = [
     {title: 'Buy detergent power.', description: 'Ayyo mudiyala'},
     {title: 'Wash your cloths, Almost two weeks gone.'},
