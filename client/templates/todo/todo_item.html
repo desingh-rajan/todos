@@ -1,8 +1,8 @@
 <template name="todoItem">
   <div class="todo-item">
     <div class="todo-title">
-      <h3>
-        {{title}}
+      <h3><a href="{{pathFor 'todoPage'}}">
+        {{title}}</a>
       </h3>
         {{#if description}}
         <span>{{description}}</span>
