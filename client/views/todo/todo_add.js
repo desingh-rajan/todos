@@ -1,11 +1,11 @@
 Template.todoAdd.events({
-    'submit form': function (e) {
-        e.preventDefault();
+    'submit form': function (event) {
+        event.preventDefault();
 
         var todo = {
-            title: $(e.target).find('[name=title]').val(),
-            description: $(e.target).find('[name=description]').val()
-        }
+            title: $(event.target).find('[name=title]').val(),
+            description: $(event.target).find('[name=description]').val()
+        };
         Meteor.call('post', todo, function (error, id) {
             if (error)
                 return alert(error.reason);
@@ -14,4 +14,4 @@ Template.todoAdd.events({
 
         });
     }
-})
+});
