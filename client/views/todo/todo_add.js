@@ -6,7 +6,12 @@ Template.todoAdd.events({
             title: $(e.target).find('[name=title]').val(),
             description: $(e.target).find('[name=description]').val()
         }
-        todo._id = Todo.insert(todo);
-        Router.go('todoPage', todo);
+        Meteor.call('post', todo, function (error, id) {
+            if (error)
+                return alert(error.reason);
+
+            Router.go('todoPage', {_id: id})
+
+        });
     }
 })
