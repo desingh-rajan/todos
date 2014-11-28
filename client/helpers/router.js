@@ -29,7 +29,9 @@ var permitUser = function () {
     if (!Meteor.user()) {
         this.render('accessDenied');
         this.stop();
+    } else {
+        this.next();
     }
-}
+};
 Router.before(permitUser, {only: 'todoAdd'})
 
