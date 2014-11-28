@@ -22,4 +22,14 @@ Router.map(function () {
     this.route('todoAdd', {
         path: '/add'
     });
+
 });
+
+var permitUser = function () {
+    if (!Meteor.user()) {
+        this.render('accessDenied');
+        this.stop();
+    }
+}
+Router.before(permitUser, {only: 'todoAdd'})
+
