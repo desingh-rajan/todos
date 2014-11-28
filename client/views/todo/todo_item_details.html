@@ -1,0 +1,15 @@
+<template name="todoItemDetails">
+  <div class="todo-item">
+    <div class="todo-title">
+      <h3><a href="{{pathFor 'todoPage'}}">
+        {{title}}</a>
+      </h3>
+      {{#if description}}
+      <span>{{description}}</span>
+      {{/if}}
+    </div>
+    {{#if user}}
+    <small>Created by: {{user}}</small>
+    {{/if}}
+  </div>
+</template>
