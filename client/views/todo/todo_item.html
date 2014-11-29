@@ -1,9 +1,8 @@
 <template name="todoItem">
-  <div class="todo-item">
-    <div class="todo-title">
-      <h3><a href="{{pathFor 'todoPage'}}">
-        {{title}}</a>
-      </h3>
-    </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" value="">
+      <a href="{{pathFor 'todoPage'}}">{{title}}</a>
+    </label>
   </div>
 </template>
