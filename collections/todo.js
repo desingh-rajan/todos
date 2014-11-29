@@ -1,5 +1,10 @@
 Todo = new Mongo.Collection('todo');
 
+Todo.allow({
+    update: ownsDocument,
+    remove: ownsDocument
+});
+
 Meteor.methods({
     post: function (todoAttributes) {
         var user = Meteor.user(),
