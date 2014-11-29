@@ -5,6 +5,12 @@ Todo.allow({
     remove: ownsDocument
 });
 
+Todo.deny({
+    update: function (userId, post, fieldNames) {
+        return(_.without(fieldNames, 'title', 'description').length > 0);
+    }
+});
+
 Meteor.methods({
     post: function (todoAttributes) {
         var user = Meteor.user(),
