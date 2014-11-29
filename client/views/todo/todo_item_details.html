@@ -10,6 +10,9 @@
     </div>
     {{#if user}}
     <small>Created by: {{user}}</small>
+    {{#if ownTodo}}
+    <a href="{{pathFor 'todoEdit'}}">Edit</a>
+    {{/if}}
     {{/if}}
   </div>
 </template>

@@ -23,12 +23,19 @@ Router.map(function () {
         path: '/add'
     });
 
+    this.route('todoEdit', {
+        path: '/todo/:_id/edit',
+        data: function () {
+            return Todo.findOne(this.params._id);
+        }
+    });
+
 });
 
 var permitUser = function () {
     if (!Meteor.user()) {
         this.render('accessDenied');
-        this.stop();
+//        this.stop();
     } else {
         this.next();
     }
