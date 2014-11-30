@@ -9,14 +9,19 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="{{pathFor 'todoList'}}">TODO</a>
+        <a class="navbar-brand" href="{{pathFor 'todoList'}}">
+          <span class="glyphicon glyphicon-check" aria-hidden="true"></span>
+          T0D0
+        </a>
+
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
           {{#if currentUser}}
-          <li><a href="{{pathFor 'todoAdd'}}">Add <span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+          <li><a class="" href="{{pathFor 'todoAdd'}}">Add <span class="glyphicon glyphicon-plus"
+                                                                 aria-hidden="true"></span></a>
           </li>
           {{/if}}
         </ul>

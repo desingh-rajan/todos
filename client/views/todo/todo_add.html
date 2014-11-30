@@ -1,19 +1,17 @@
 <template name="todoAdd">
   <form>
-    <div class="input-group input-group-lg">
-      <input type="text" name="title" class="form-control" placeholder="Things you forget..">
+    <div class="input-group input-group-lg col-md-8">
+      <input type="text" name="title" class="form-control" placeholder="Things you forget.." required="true">
     </div>
     <br>
 
-    <div class="input-group input-group-lg">
+    <div class="input-group input-group-lg col-md-8">
       <input type="text" name="description" class="form-control" placeholder="Are you serious?">
     </div>
     <br>
 
-    <div class="control-group">
-      <div class="controls">
+    <div class="btn-group btn-group-md" role="group">
         <input type="submit" value="Add" class="btn btn-success"/>
-      </div>
     </div>
 
   </form>
