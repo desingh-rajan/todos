@@ -20,9 +20,12 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
           {{#if currentUser}}
-          <li><a class="" href="{{pathFor 'todoAdd'}}">Add <span class="glyphicon glyphicon-plus"
-                                                                 aria-hidden="true"></span></a>
-          </li>
+          <!--<li><a class="glyphicon glyphicon-edit" href="{{pathFor 'todoAdd'}}">ADD</a>-->
+          <!--</li>-->
+          <a class="navbar-brand" href="{{pathFor 'todoAdd'}}">
+            <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+            Add
+          </a>
           {{/if}}
         </ul>
         <ul class="nav navbar-nav navbar-right">
