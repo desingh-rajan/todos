@@ -1,7 +1,9 @@
 <template name="todoList">
-  <div class="todo">
-    {{#each todo}}
-    {{> todoItem}}
-    {{/each}}
+  <div class="panel panel-info col-md-6">
+      <div class="todo">
+        {{#each todo}}
+        {{> todoItem}}
+        {{/each}}
+      </div>
   </div>
 </template>
